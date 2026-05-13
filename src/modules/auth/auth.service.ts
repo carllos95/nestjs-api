@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable prettier/prettier */
 import { ConflictException, Injectable, InternalServerErrorException } from '@nestjs/common';
-import { RegisterUserDto } from 'src/dto/registerUser.dto';
-import { UsersRepository } from 'src/repository/users.repository';
 import * as bcrypt from 'bcrypt';
+import { RegisterUserDto } from './dto/registerUser.dto';
+import { UsersRepository } from '../users/users.repository';
 
 @Injectable()
 export class AuthService {

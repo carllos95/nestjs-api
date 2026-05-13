@@ -2,7 +2,7 @@
 /* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
 import { Users } from '@prisma/client';
-import { UsersRepository } from 'src/repository/users.repository';
+import { UsersRepository } from './users.repository';
 
 @Injectable()
 export class UsersService {

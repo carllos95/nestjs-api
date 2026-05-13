@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
-import { UsersModule } from './module/users.module';
-import { PrismaModule } from './module/prisma.module';
-import { AuthModule } from './module/auth.module';
+import { PrismaModule } from './shared/prisma/prisma.module';
+import { UsersModule } from './modules/users/users.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [PrismaModule, UsersModule, AuthModule],

@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
-import { RegisterUserDto } from 'src/dto/registerUser.dto';
-import { PrismaService } from 'src/service/prisma.service';
+import { RegisterUserDto } from 'src/modules/auth/dto/registerUser.dto';
+import { PrismaService } from 'src/shared/prisma/prisma.service';
 
 @Injectable()
 export class UsersRepository {

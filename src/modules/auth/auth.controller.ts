@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import { Body, Controller, HttpCode, Post } from '@nestjs/common';
-import { RegisterUserDto } from 'src/dto/registerUser.dto';
-import { AuthService } from 'src/service/auth.service';
+import { RegisterUserDto } from './dto/registerUser.dto';
+import { AuthService } from './auth.service';
 
 @Controller('auth')
 export class AuthController {

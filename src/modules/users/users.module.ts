@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
-import { UsersController } from 'src/controller/users.controller';
-import { UsersRepository } from 'src/repository/users.repository';
-import { UsersService } from 'src/service/users.service';
+import { UsersController } from './users.controller';
+import { UsersService } from './users.service';
+import { UsersRepository } from './users.repository';
 
 @Module({
   imports: [],
